@@ -12,12 +12,7 @@
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<h1 class="mui-title">急救365</h1>
-			<a class="mui-icon mui-icon-bars mui-pull-left menua"></a>
-			<a id="info" class="mui-icon mui-icon-info-filled mui-pull-right" style="color: #999;"></a>
-		</header>
-		//底栏，采用底部选项卡，webview模式
+		<!--//底栏，采用底部选项卡，webview模式-->
 		<nav class="mui-bar mui-bar-tab">
 			<!--//递补选项卡-->
 			<a id="defaultTab" class="mui-tab-item mui-active" href="home.html">
@@ -48,7 +43,7 @@
 			});
 			var subpages = ['home.html', 'precaution.html', 'emergency.html', 'information.html'];
 			var subpage_style = {
-				top: '45px',
+				top: '0px',
 				bottom: '50px'
 			};
 			var aniShow = {};
@@ -92,26 +87,14 @@
 				//更改当前活跃的选项卡
 				activeTab = targetTab;
 			});
-			//自定义事件，模拟点击“首页选项卡”
-			document.addEventListener('gohome', function() {
-				var defaultTab = document.getElementById("defaultTab");
-				//模拟首页点击
-				mui.trigger(defaultTab, 'tap');
-				//切换选项卡高亮
-				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
-				if (defaultTab !== current) {
-					current.classList.remove('mui-active');
-					defaultTab.classList.add('mui-active');
-				}
-			});
-			//tap为mui封装的单击事件，可参考手势事件章节，这里处理关于软件开发的页面
-			document.getElementById('info').addEventListener('tap', function() {
-				//打开关于页面
-				mui.openWindow({
-					url: 'about us.html',
-					id: 'aboutus'
-				});
-			});
+			//tap为mui封装的单击事件，可参考手势事件章节，这里处理关于软件开发介绍的页面
+//			document.getElementById('info').addEventListener('tap', function() {
+//				//打开关于页面
+//				mui.openWindow({
+//					url: 'about us.html',
+//					id: 'aboutus'
+//				});
+//			});
 			//首页返回键处理
 			 //处理逻辑：1秒内，连续两次按返回键，则退出应用；
 			var first = null;
@@ -133,8 +116,9 @@
 					}
 				}
 			};
-		
+
 		</script>
+	</script>
 	</body>
 
 </html>

@@ -1,7 +1,10 @@
 {
-	"@platforms": ["android", "iPhone", "iPad"],
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"],
 	"id": "H5E86BD37",/*应用的标识，创建应用时自动生成，勿手动修改*/
-	"name": "急救365",/*应用名称，程序桌面图标名称*/
+	"name": "First aid",/*应用名称，程序桌面图标名称*/
 	"version": {
 		"name": "1.0.0",/*应用版本名称*/
 		"code": "83"
@@ -17,80 +20,65 @@
 		"url": "http://www.dcloud.io"
 	},
 	"permissions": {
-		"Accelerometer": {
-            "description": "访问加速度感应器"
-        },
-        
-        "Cache": {
-            "description": "管理应用缓存"
-        },
-        
-        "Console": {
-            "description": "跟踪调试输出日志"
-        },
-        "Contacts": {
-            "description": "访问系统联系人信息"
-        },
-        "Device": {
-            "description": "访问设备信息"
-        },
-        
-        "Events": {
-            "description": "应用扩展事件"
-        },
-        "File": {
-            "description": "访问本地文件系统"
-        },
-        
-        
-         "Invocation": {
-            "description": "使用Native.js能力"
-        },
-        
-        "Orientation": {
-            "description": "访问方向感应器"
-        },
-        "Proximity": {
-            "description": "访问距离感应器"
-        },
-        "Storage": {
-            "description": "管理应用本地数据"
-        },
-        
-        "Uploader": {
-            "description": "管理文件上传任务"
-        },
-        "Runtime": {
-            "description": "访问运行期环境"
-        },
-        "XMLHttpRequest": {
-            "description": "跨域网络访问"
-        },
-        
-        
-        "Maps": {
-            "description": "管理地图插件"
-        },
-        "Speech": {
-            "description": "管理语音识别插件"
-        },
-        "Webview":{
-        	"description": "窗口管理"
-        },
-        "NativeUI":{
-        	"description": "原生UI控件"
-        },
-        "Navigator":{
-        	"description": "浏览器信息"
-        },
-        "NativeObj":{
-        	"description": "原生对象"
-        }
+
+
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+
+		"Device": {},
+
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+
+
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+
+
+
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+
+
+
+
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		}
 	},
 	"plus": {
 		"splashscreen": {
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-			"waiting": true
+			"waiting": true,
+			"delay": "0"
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -108,9 +96,20 @@
 				"keystore": "",/*Android应用打包使用的密钥库文件*/
 				"password": "",/*Android应用打包使用密钥库中证书的密码*/
 				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
-				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>"]
+				"permissions": [
+					"<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>"]
 			},
-			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
 			"icons": {
 				"ios": {
 					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
@@ -127,7 +126,7 @@
 					},
 					"ipad": {
 						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
-						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"retina": "C:/Users/Administrator/Downloads/first_aid_256px.png", /*iPad高分屏程序图标，分辨率：144x144*/
 						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
 						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
 						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
@@ -143,7 +142,7 @@
 					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
 					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
 					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
-					"xxhdpi": ""
+					"xxhdpi": "C:/Users/Administrator/Downloads/first_aid_256px.png"
 				}
 			},
 			"splashscreen": {
@@ -168,7 +167,7 @@
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
 					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "C:/Users/Administrator/Pictures/家庭急救手册.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xhdpi": "C:/Users/Administrator/Pictures/first-aid-365.png", /*720P高分屏启动图片，分辨率：720x1242*/
 					"xxhdpi": ""
 				}
 			}
@@ -196,7 +195,14 @@
 					"imgs/stings_bites_grey.png",
 					"index.html",
 					"imgs/allergy.jpg",
-					"home/allergy.html"
+					"home/allergy.html",
+					"home/asthma.html",
+					"home/bleeding.html",
+					"imgs/yanlian1 (4).jpg",
+					"imgs/yanlian1 (2).jpg",
+					"imgs/yanlian1 (1).jpg",
+					"imgs/yanlian1 (3).jpg",
+					"home/unconcious.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -234,7 +240,21 @@
 					"imgs/flood_newgrey.png",
 					"imgs/tsunami_newgrey.png",
 					"imgs/pre1.jpg",
-					"index.html"
+					"index.html",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"/precaution/chemistry.html",
+					"/precaution/tsunami.html",
+					"precaution/chemistry.html",
+					"precaution/earthquake.html",
+					"precaution/fire.html",
+					"precaution/servercold.html",
+					"precaution/everyday.html",
+					"precaution/severeheat.html",
+					"precaution/food.html",
+					"precaution/volcano.html",
+					"precaution/tsunami.html",
+					"precaution/flood.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -243,7 +263,15 @@
 				"resources": [
 					"imgs/redcross.png",
 					"index.html",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"imgs/sharapp.png",
+					"information/course.html",
+					"imgs/info1 (4).jpg",
+					"imgs/info1 (1).jpg",
+					"imgs/info1 (2).jpg",
+					"information/info.html",
+					"information/principle.html",
+					"js/mui.min.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -265,7 +293,18 @@
 					"imgs/stroke_red.png",
 					"index.html",
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"emergency/allergy.html",
+					"emergency/asthma.html",
+					"emergency/broken_bone.html",
+					"emergency/bleeding.html",
+					"emergency/fire.html",
+					"emergency/diabetes.html",
+					"emergency/unconcious.html",
+					"emergency/heartattack.html",
+					"emergency/stroke.html",
+					"emergency/posioning.html",
+					"emergency/heat.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -278,7 +317,201 @@
 					"home.html",
 					"imgs/allergy.png",
 					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/asthma.html": {
+				"resources": [
+					"css/mui.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/allergy.html": {
+				"resources": [
+					"emergency.html",
+					"css/mui.css",
 					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/asthma.html": {
+				"resources": [
+					"emergency.html",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/bleeding.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/broken_bone.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/fire.html": {
+				"resources": [
+					"css/mui.css",
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/unconcious.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/chemistry.html": {
+				"resources": [
+					"emergency.html",
+					"css/mui.css",
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/earthquake.html": {
+				"resources": [
+					"precaution.html",
+					"js/jquery.min.js",
+					"css/mui.css",
+					"fonts/mui.ttf",
+					"css/app.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/fire.html": {
+				"resources": [
+					"precaution.html",
+					"fonts/mui.ttf",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/servercold.html": {
+				"resources": [
+					"precaution.html",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/everyday.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/severeheat.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/food.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/volcano.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"information/course.html": {
+				"resources": [
+					"information.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/heartattack.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"information/info.html": {
+				"resources": [
+					"information.html",
+					"fonts/mui.ttf",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/tsunami.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/stroke.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/diabetes.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/posioning.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/heat.html": {
+				"resources": [
+					"emergency.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"precaution/flood.html": {
+				"resources": [
+					"precaution.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"information/principle.html": {
+				"resources": [
+					"information.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -286,29 +519,45 @@
 		},
 		"idle": {
 			"resources": [
+				"imgs/info1%20(2).jpg",
 				"imgs/yanlian1%20(3).jpg",
+				"imgs/unconciousbreath_red.png",
 				"imgs/yanlian1%20(1).jpg",
-				"desktop.ini",
+				"imgs/info1%20(3).jpg",
+				"imgs/fooyoyo模板2.jpg",
 				"imgs/jijiubao.jpg",
 				"imgs/unconcious_red.png",
 				"imgs/yanhan.jpg",
 				"imgs/yanlian1%20(4).jpg",
+				"about%20us.html",
 				"imgs/info1%20(4).jpg",
 				"imgs/hanzai.jpg",
+				"imgs/haixiao.jpg",
 				"imgs/info1%20(1).jpg",
 				"imgs/zhangpeng.jpg",
+				"imgs/huozai.jpg",
+				"imgs/yanlian.jpg",
+				"main/template.html",
 				"imgs/dianxian.png",
 				"imgs/yanlian1%20(2).jpg",
-				"imgs/shixue.png",
-				"imgs/info1%20(2).jpg",
-				"imgs/unconciousbreath_red.png",
-				"js/information.js",
-				"imgs/info1%20(3).jpg",
-				"about%20us.html",
-				"imgs/haixiao.jpg",
-				"imgs/huozai.jpg",
-				"imgs/yanlian.jpg"
+				"imgs/shixue.png"
 			]
+		},
+		"index": {
+			"resources": [
+				"home.html",
+				"js/mui.min.js",
+				"fonts/mui.ttf",
+				"css/mui.min.css",
+				"js/index.js",
+				"precaution.html",
+				"information.html",
+				"emergency.html"
+			],
+			"refer": [
+				"about us.html"
+			],
+			"priority": 0
 		}
 	}
 }
