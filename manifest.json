@@ -202,7 +202,15 @@
 					"imgs/yanlian1 (2).jpg",
 					"imgs/yanlian1 (1).jpg",
 					"imgs/yanlian1 (3).jpg",
-					"home/unconcious.html"
+					"home/unconcious.html",
+					"home/unconcious2.html",
+					"home/broken_bone.html",
+					"home/stings_bites.html",
+					"home/posioning.html",
+					"home/heartattack.html",
+					"home/severheat.html",
+					"home/fire.html",
+					"home/strain.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -383,7 +391,8 @@
 				"resources": [
 					"emergency.html",
 					"css/mui.css",
-					"precaution.html"
+					"precaution.html",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -418,7 +427,9 @@
 			},
 			"precaution/everyday.html": {
 				"resources": [
-					"precaution.html"
+					"precaution.html",
+					"css/mui.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -512,6 +523,71 @@
 			"information/principle.html": {
 				"resources": [
 					"information.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/unconcious2.html": {
+				"resources": [
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/broken_bone.html": {
+				"resources": [
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/bleeding.html": {
+				"resources": [
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/stings_bites.html": {
+				"resources": [
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/posioning.html": {
+				"resources": [
+					"home.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/heartattack.html": {
+				"resources": [
+					"home.html",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/severheat.html": {
+				"resources": [
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/fire.html": {
+				"resources": [
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/unconcious.html": {
+				"resources": [
+					"home.html",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0

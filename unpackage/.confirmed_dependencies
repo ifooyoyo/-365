@@ -20,11 +20,33 @@
 			"imgs/heartattack_grey.png",
 			"imgs/stings_bites_grey.png",
 			"home/allergy.html",
-			"home/unconcious.html"
+			"home/unconcious.html",
+			"home/asthma.html",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"home/unconcious2.html",
+			"home/bleeding.html",
+			"home/broken_bone.html",
+			"home/stings_bites.html",
+			"home/posioning.html",
+			"home/heartattack.html",
+			"home/severheat.html",
+			"home/fire.html",
+			"home/strain.html"
 		],
 		"refer": [
 			"home/allergy.html",
-			"home/unconcious.html"
+			"home/unconcious.html",
+			"home/asthma.html",
+			"home/unconcious2.html",
+			"home/bleeding.html",
+			"home/broken_bone.html",
+			"home/stings_bites.html",
+			"home/posioning.html",
+			"home/heartattack.html",
+			"home/severheat.html",
+			"home/fire.html",
+			"home/strain.html"
 		]
 	},
 	"index.html": {
@@ -145,7 +167,8 @@
 	"precaution/chemistry.html": {
 		"resources": [
 			"precaution.html",
-			"css/mui.css"
+			"css/mui.css",
+			"fonts/mui.ttf"
 		],
 		"refer": [
 			"precaution.html"
@@ -318,7 +341,9 @@
 	},
 	"precaution/everyday.html": {
 		"resources": [
-			"precaution.html"
+			"precaution.html",
+			"css/mui.css",
+			"fonts/mui.ttf"
 		],
 		"refer": [
 			"precaution.html"
@@ -338,6 +363,84 @@
 		],
 		"refer": [
 			"information.html"
+		]
+	},
+	"home/asthma.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.css",
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/unconcious2.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/broken_bone.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/bleeding.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/stings_bites.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/posioning.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/heartattack.html": {
+		"resources": [
+			"home.html",
+			"css/mui.css"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/severheat.html": {
+		"resources": [
+			"css/mui.css"
+		]
+	},
+	"home/fire.html": {
+		"resources": [
+			"css/mui.css"
+		]
+	},
+	"home/unconcious.html": {
+		"resources": [
+			"home.html",
+			"css/mui.css"
+		],
+		"refer": [
+			"home.html"
 		]
 	}
 }
