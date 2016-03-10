@@ -32,7 +32,9 @@
 			"home/heartattack.html",
 			"home/severheat.html",
 			"home/fire.html",
-			"home/strain.html"
+			"home/strain.html",
+			"home/distress.html",
+			"home/stroke.html"
 		],
 		"refer": [
 			"home/allergy.html",
@@ -46,7 +48,9 @@
 			"home/heartattack.html",
 			"home/severheat.html",
 			"home/fire.html",
-			"home/strain.html"
+			"home/strain.html",
+			"home/distress.html",
+			"home/stroke.html"
 		]
 	},
 	"index.html": {
@@ -275,7 +279,9 @@
 	},
 	"emergency/broken_bone.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"video/broken-bones.mp4",
+			"imgs/broken-bones.png"
 		],
 		"refer": [
 			"emergency.html"
@@ -385,7 +391,8 @@
 	},
 	"home/broken_bone.html": {
 		"resources": [
-			"home.html"
+			"home.html",
+			"css/mui.css"
 		],
 		"refer": [
 			"home.html"
@@ -438,6 +445,28 @@
 		"resources": [
 			"home.html",
 			"css/mui.css"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/distress.html": {
+		"resources": [
+			"imgs/xiuke2.jpg",
+			"css/mui.css",
+			"fonts/mui.ttf",
+			"imgs/xiuke1.jpg",
+			"imgs/xiuke.jpg",
+			"home.html"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"home/stroke.html": {
+		"resources": [
+			"css/mui.css",
+			"home.html"
 		],
 		"refer": [
 			"home.html"
