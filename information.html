@@ -4,13 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-		<title></title>
+		<title>信息</title>
 		<link rel="stylesheet" href="css/mui.min.css">
-		<script type="text/jscript" src="js/mui.min.js"></script>
-		<!--<script type="text/javascript" src="js/information.js" ></script>-->
-		<script type="text/javascript" charset="utf-8">
-			mui.init();
-		</script>
+		
 	</head>
 	<body>
 		<div class="mui-slider">
@@ -51,37 +47,46 @@
 						</div>
 					</a>
 				</li>
+				
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
-						<img class="mui-media-object mui-pull-left" src="imgs/redcross.png">
-						<div class="mui-media-body">
-							<p class='mui-ellipsis'>总会官网</p>
-						</div>
-					</a>
-				</li>
-				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
+					<a href="http://weibo.com/u/2205860842?is_hot=1">
 						<img class="mui-media-object mui-pull-left" src="imgs/redcross.png">
 						<div class="mui-media-body">
 							<p class='mui-ellipsis'>总会微博</p>
+							
 						</div>
 					</a>
 				</li>
 			
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
+					<a href="about us.html">
 						<img class="mui-media-object mui-pull-left" src="imgs/sharapp.png">
 						<div class="mui-media-body">
-							<p class='mui-ellipsis'>分享给朋友</p>
+							<p class='mui-ellipsis'>关于</p>
+								
 						</div>
 					</a>
 				</li>
 			</ul>
 		</div>
-		<script type="text/javascript" charset="utf-8">
-			mui.init({
-				swipeBack:true
-			})
+		<script type="text/jscript" src="js/mui.min.js"></script>
+		<script >
+		mui.init();
+		var first = null;
+		mui.back = function() {
+		//首次按键，提示‘再按一次退出应用’
+		if (!first) {
+		first = new Date().getTime();
+		mui.toast('再按一次退出应用');
+		setTimeout(function() {
+		first = null;
+		}, 1000);
+		} else {
+		if (new Date().getTime() - first < 1000) {
+		plus.runtime.quit();
+		}
+		}
+		};
 		</script>
 	</body>
 

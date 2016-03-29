@@ -16,7 +16,7 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav" href="../home.html"></a>
+			<a class="mui-action-back mui-icon mui-icon-left-nav" href="../precaution/chemistry.html"></a>
 			<h1 class="mui-title">中毒</h1>
 		</header>
 		<div class="mui-content">
@@ -41,6 +41,17 @@
 				</li>
 			</ul>
 		</div>
+		<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script>
+		function plusReady(){
+ws=plus.webview.currentWebview();
+// Android处理返回键
+	plus.key.addEventListener('backbutton',function(){
+back();
+},false);
+compatibleAdjust();
+}
+	</script>
 	</body>
 
 </html>

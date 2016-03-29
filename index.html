@@ -8,7 +8,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<script src="js/mui.min.js"></script>
+		
 	</head>
 
 	<body>
@@ -33,14 +33,10 @@
 				<span class="mui-tab-label">信息</span>
 			</a>
 		</nav>
+		<script type="text/javascript" src="js/mui.min.js" ></script>
 		<script type="text/javascript" charset="utf-8">
-			var menu = null,
-				main = null;
-			var showMenu = false;
-			//mui初始化
-			mui.init({
-				swipeBack: true
-			});
+		 	//mui初始化
+			mui.init();
 			var subpages = ['home.html', 'precaution.html', 'emergency.html', 'information.html'];
 			var subpage_style = {
 				top: '0px',
@@ -71,9 +67,7 @@
 				if (targetTab == activeTab) {
 					return;
 				}
-				//更换标题
-				//title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
-				//显示目标选项卡
+				
 				if (mui.os.ios || aniShow[targetTab]) {
 					plus.webview.show(targetTab);
 				} else {
@@ -87,38 +81,20 @@
 				//更改当前活跃的选项卡
 				activeTab = targetTab;
 			});
-			//tap为mui封装的单击事件，可参考手势事件章节，这里处理关于软件开发介绍的页面
-//			document.getElementById('info').addEventListener('tap', function() {
-//				//打开关于页面
-//				mui.openWindow({
-//					url: 'about us.html',
-//					id: 'aboutus'
-//				});
-//			});
-			//首页返回键处理
-			 //处理逻辑：1秒内，连续两次按返回键，则退出应用；
-			var first = null;
-			mui.back = function() {
-				if (showMenu) {
-					closeMenu();
-				} else {
-					//首次按键，提示‘再按一次退出应用’
-					if (!first) {
-						first = new Date().getTime();
-						mui.toast('再按一次退出应用');
-						setTimeout(function() {
-							first = null;
-						}, 1000);
-					} else {
-						if (new Date().getTime() - first < 1000) {
-							plus.runtime.quit();
-						}
-					}
+			 //自定义事件，模拟点击“首页选项卡”
+			document.addEventListener('gohome', function() {
+				var defaultTab = document.getElementById("defaultTab");
+				//模拟首页点击
+				mui.trigger(defaultTab, 'tap');
+				//切换选项卡高亮
+				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+				if (defaultTab !== current) {
+					current.classList.remove('mui-active');
+					defaultTab.classList.add('mui-active');
 				}
-			};
-
+			});
 		</script>
-	</script>
+	
 	</body>
 
 </html>

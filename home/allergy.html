@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>过敏反应</title>
-		<link href="../css/mui.css" rel="stylesheet" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		
 		<style>
 			p {
 				text-indent: 22px;
@@ -15,11 +16,11 @@
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav" href="../home.html"></a>
+
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="../home.html"></a>
 			<h1 class="mui-title">过敏反应</h1>
 		</header>
-		
 		<div class="mui-content">
 			<h4>1.患者手、足或面部出现皮疹、瘙痒或水肿，并可能出现呼吸浅慢</h4> 　　也可能出现呕吐和腹泻状况，引起过敏反应的常见过敏原有花粉、蚊虫叮咬、乳胶，还有一些食物，如坚果或者奶制品。
 
@@ -31,32 +32,41 @@
 			<hr />
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-collapse">
-					<a class="mui-navigate-right" href="javascript:;">什么是过敏休克? </a>
+					<a class="mui-navigate-right" href="#;">什么是过敏休克? </a>
 					<div class="mui-collapse-content">
 						过敏休克是严重的过敏反应，可以导致患者呼吸困难，脉搏微弱，低血压，精神波动。
 					</div>
 				</li>
 				<li class="mui-table-view-cell mui-collapse">
-					<a class="mui-navigate-right" href="javascript:;">什么样的食物会导致过敏？</a>
+					<a class="mui-navigate-right" href="#">什么样的食物会导致过敏？</a>
 					<div class="mui-collapse-content">
 						引起过敏反应最常见的食物是坚果、贝类、奶制品和鸡蛋。其他过敏原包括乳胶、蚊虫叮咬以及某些能引起过敏反应的药物。
 					</div>
 				</li>
 				<li class="mui-table-view-cell mui-collapse">
-					<a class="mui-navigate-right" href="javascript:;">我能给患者使用自动注射器吗？</a>
+					<a class="mui-navigate-right" href="#">我能给患者使用自动注射器吗？</a>
 					<div class="mui-collapse-content">
 						如果患者发生过敏反应，并自己带有自动注射器，经患者同意，你可以帮助他们使用。
 					</div>
 				</li>
 				<li class="mui-table-view-cell mui-collapse">
-					<a class="mui-navigate-right" href="javascript:;">什么是自动注射器？</a>
+					<a class="mui-navigate-right" href="#">什么是自动注射器？</a>
 					<div class="mui-collapse-content">
 						一旦患者被确诊为有过过敏症，医生会建议他们常备自动注册器用于急救。它能帮助缓解过敏症状。
 					</div>
 				</li>
 			</ul>
 		</div>
-		<script src="../js/mui.min.js"></script>
+		<script>
+		function plusReady(){
+ws=plus.webview.currentWebview();
+// Android处理返回键
+	plus.key.addEventListener('backbutton',function(){
+back();
+},true);
+compatibleAdjust();
+}
+		</script>
 	</body>
 
 </html>

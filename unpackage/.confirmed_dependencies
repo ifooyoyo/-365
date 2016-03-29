@@ -34,7 +34,9 @@
 			"home/fire.html",
 			"home/strain.html",
 			"home/distress.html",
-			"home/stroke.html"
+			"home/stroke.html",
+			"js/index.js",
+			"home/accordion.html"
 		],
 		"refer": [
 			"home/allergy.html",
@@ -50,7 +52,8 @@
 			"home/fire.html",
 			"home/strain.html",
 			"home/distress.html",
-			"home/stroke.html"
+			"home/stroke.html",
+			"home/accordion.html"
 		]
 	},
 	"index.html": {
@@ -59,7 +62,9 @@
 			"js/mui.min.js",
 			"fonts/mui.ttf",
 			"css/mui.min.css",
-			"emergency.html"
+			"emergency.html",
+			"precaution.html",
+			"information.html"
 		],
 		"refer": [
 			"home.html",
@@ -94,7 +99,8 @@
 			"js/mui.min.js",
 			"css/mui.min.css",
 			"precaution/flood.html",
-			"precaution/severeheat.html"
+			"precaution/severeheat.html",
+			"precaution/volcano.html"
 		],
 		"refer": [
 			"precaution/chemistry.html",
@@ -105,7 +111,8 @@
 			"precaution/fire.html",
 			"precaution/servercold.html",
 			"precaution/flood.html",
-			"precaution/severeheat.html"
+			"precaution/severeheat.html",
+			"precaution/volcano.html"
 		]
 	},
 	"information.html": {
@@ -119,12 +126,14 @@
 			"information/course.html",
 			"css/mui.min.css",
 			"information/principle.html",
-			"js/mui.min.js"
+			"js/mui.min.js",
+			"about us.html"
 		],
 		"refer": [
 			"information/course.html",
 			"information/info.html",
-			"information/principle.html"
+			"information/principle.html",
+			"about us.html"
 		]
 	},
 	"emergency.html": {
@@ -152,7 +161,10 @@
 			"emergency/bleeding.html",
 			"emergency/diabetes.html",
 			"emergency/posioning.html",
-			"emergency/heat.html"
+			"emergency/heat.html",
+			"emergency/strain.html",
+			"css/mui.min.css",
+			"js/mui.min.js"
 		],
 		"refer": [
 			"emergency/heartattack.html",
@@ -165,17 +177,20 @@
 			"emergency/asthma.html",
 			"emergency/diabetes.html",
 			"emergency/posioning.html",
-			"emergency/heat.html"
+			"emergency/heat.html",
+			"emergency/strain.html"
 		]
 	},
 	"precaution/chemistry.html": {
 		"resources": [
 			"precaution.html",
 			"css/mui.css",
-			"fonts/mui.ttf"
+			"fonts/mui.ttf",
+			"home/posioning.html"
 		],
 		"refer": [
-			"precaution.html"
+			"precaution.html",
+			"home/posioning.html"
 		]
 	},
 	"home/allergy.html": {
@@ -183,7 +198,10 @@
 			"css/mui.css",
 			"home.html",
 			"js/mui.min.js",
-			"fonts/mui.ttf"
+			"fonts/mui.ttf",
+			"css/app.css",
+			"css/mui.min.css",
+			"js/mui.js"
 		],
 		"refer": [
 			"home.html"
@@ -191,7 +209,9 @@
 	},
 	"emergency/unconcious.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"imgs/unconcious-emergency.jpg",
+			"imgs/concious.jpg"
 		],
 		"refer": [
 			"emergency.html"
@@ -201,18 +221,27 @@
 		"resources": [
 			"emergency.html",
 			"css/mui.css",
-			"fonts/mui.ttf"
+			"fonts/mui.ttf",
+			"imgs/allergy.jpg",
+			"home/allergy.html",
+			"js/index.js",
+			"js/mui.min.js"
 		],
 		"refer": [
-			"emergency.html"
+			"emergency.html",
+			"home/allergy.html"
 		]
 	},
 	"emergency/asthma.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"imgs/asthma2.jpg",
+			"css/mui.css",
+			"home/asthma.html"
 		],
 		"refer": [
-			"emergency.html"
+			"emergency.html",
+			"home/asthma.html"
 		]
 	},
 	"precaution/earthquake.html": {
@@ -221,31 +250,44 @@
 			"js/jquery.min.js",
 			"css/mui.css",
 			"fonts/mui.ttf",
-			"css/app.css"
+			"css/app.css",
+			"js/index.js",
+			"home/broken_bone.html"
 		],
 		"refer": [
-			"precaution.html"
+			"precaution.html",
+			"home/broken_bone.html"
 		]
 	},
 	"emergency/heartattack.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"home/unconcious.html",
+			"imgs/heartattack.jpg",
+			"css/mui.css"
 		],
 		"refer": [
-			"emergency.html"
+			"emergency.html",
+			"home/unconcious.html"
 		]
 	},
 	"emergency/fire.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"imgs/fire2.png",
+			"home/fire.html"
 		],
 		"refer": [
-			"emergency.html"
+			"emergency.html",
+			"home/fire.html"
 		]
 	},
 	"information/course.html": {
 		"resources": [
-			"information.html"
+			"information.html",
+			"css/mui.css",
+			"fonts/mui.ttf",
+			"js/index.js"
 		],
 		"refer": [
 			"information.html"
@@ -255,7 +297,8 @@
 		"resources": [
 			"information.html",
 			"fonts/mui.ttf",
-			"css/mui.css"
+			"css/mui.css",
+			"js/index.js"
 		],
 		"refer": [
 			"information.html"
@@ -263,7 +306,9 @@
 	},
 	"precaution/tsunami.html": {
 		"resources": [
-			"precaution.html"
+			"precaution.html",
+			"imgs/tsunami.jpg",
+			"css/mui.css"
 		],
 		"refer": [
 			"precaution.html"
@@ -281,7 +326,9 @@
 		"resources": [
 			"emergency.html",
 			"video/broken-bones.mp4",
-			"imgs/broken-bones.png"
+			"imgs/broken-bones.png",
+			"imgs/broken.jpg",
+			"css/mui.css"
 		],
 		"refer": [
 			"emergency.html"
@@ -289,7 +336,8 @@
 	},
 	"emergency/stroke.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"imgs/stroke2.png"
 		],
 		"refer": [
 			"emergency.html"
@@ -299,7 +347,8 @@
 		"resources": [
 			"precaution.html",
 			"fonts/mui.ttf",
-			"css/mui.css"
+			"css/mui.css",
+			"imgs/huozai.jpg"
 		],
 		"refer": [
 			"precaution.html"
@@ -315,7 +364,10 @@
 	},
 	"emergency/bleeding.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"css/mui.css",
+			"fonts/mui.ttf",
+			"video/bleeding.mpeg"
 		],
 		"refer": [
 			"emergency.html"
@@ -323,7 +375,10 @@
 	},
 	"emergency/diabetes.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"imgs/diabetes.png",
+			"fonts/mui.ttf",
+			"css/mui.css"
 		],
 		"refer": [
 			"emergency.html"
@@ -339,10 +394,13 @@
 	},
 	"emergency/heat.html": {
 		"resources": [
-			"emergency.html"
+			"emergency.html",
+			"css/mui.css",
+			"home/severheat.html"
 		],
 		"refer": [
-			"emergency.html"
+			"emergency.html",
+			"home/severheat.html"
 		]
 	},
 	"precaution/everyday.html": {
@@ -357,7 +415,8 @@
 	},
 	"precaution/flood.html": {
 		"resources": [
-			"precaution.html"
+			"precaution.html",
+			"css/mui.css"
 		],
 		"refer": [
 			"precaution.html"
@@ -365,7 +424,8 @@
 	},
 	"information/principle.html": {
 		"resources": [
-			"information.html"
+			"information.html",
+			"css/mui.css"
 		],
 		"refer": [
 			"information.html"
@@ -375,7 +435,10 @@
 		"resources": [
 			"fonts/mui.ttf",
 			"css/mui.css",
-			"home.html"
+			"home.html",
+			"js/mui.min.js",
+			"js/mui.js",
+			"css/mui.min.css"
 		],
 		"refer": [
 			"home.html"
@@ -400,7 +463,12 @@
 	},
 	"home/bleeding.html": {
 		"resources": [
-			"home.html"
+			"home.html",
+			"css/mui.css",
+			"css/app.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		],
 		"refer": [
 			"home.html"
@@ -416,7 +484,10 @@
 	},
 	"home/posioning.html": {
 		"resources": [
-			"home.html"
+			"home.html",
+			"css/mui.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf"
 		],
 		"refer": [
 			"home.html"
@@ -433,18 +504,29 @@
 	},
 	"home/severheat.html": {
 		"resources": [
-			"css/mui.css"
+			"css/mui.css",
+			"home.html",
+			"imgs/serverheat2.jpg"
+		],
+		"refer": [
+			"home.html"
 		]
 	},
 	"home/fire.html": {
 		"resources": [
-			"css/mui.css"
+			"css/mui.css",
+			"home.html"
+		],
+		"refer": [
+			"home.html"
 		]
 	},
 	"home/unconcious.html": {
 		"resources": [
 			"home.html",
-			"css/mui.css"
+			"css/mui.css",
+			"imgs/unconcious.jpg",
+			"fonts/mui.ttf"
 		],
 		"refer": [
 			"home.html"
@@ -470,6 +552,55 @@
 		],
 		"refer": [
 			"home.html"
+		]
+	},
+	"about us.html": {
+		"resources": [
+			"css/mui.css",
+			"information.html",
+			"js/mui.js"
+		],
+		"refer": [
+			"information.html"
+		]
+	},
+	"precaution/severeheat.html": {
+		"resources": [
+			"imgs/serverheat.jpg",
+			"css/mui.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"precaution/volcano.html": {
+		"resources": [
+			"precaution.html",
+			"css/mui.css"
+		],
+		"refer": [
+			"precaution.html"
+		]
+	},
+	"home/strain.html": {
+		"resources": [
+			"home.html",
+			"imgs/strain.jpg"
+		],
+		"refer": [
+			"home.html"
+		]
+	},
+	"emergency/strain.html": {
+		"resources": [
+			"emergency.html",
+			"imgs/strain.jpg"
+		],
+		"refer": [
+			"emergency.html"
+		]
+	},
+	"home/accordion.html": {
+		"resources": [
+			"css/app.css"
 		]
 	}
 }

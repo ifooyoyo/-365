@@ -16,7 +16,7 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav" href="../home.html"></a>
+			<a class="mui-action-back mui-icon mui-icon-left-nav"></a>
 			<h1 class="mui-title">出血</h1>
 		</header>
 		<div class="mui-content">
@@ -77,6 +77,15 @@
 				</li>
 			</ul>
 		</div>
+		<script type="text/javascript" src="../js/mui.min.js" ></script>
+		<script>
+	{
+		function addEventTest() {
+	plus.key.addEventListener("backbutton",function(){
+		mui.back();
+	});
+	}
+	</script>
 	</body>
 
 </html>

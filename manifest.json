@@ -78,7 +78,7 @@
 		"splashscreen": {
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
 			"waiting": true,
-			"delay": "0"
+			"delay": "3"
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -212,7 +212,9 @@
 					"home/fire.html",
 					"home/strain.html",
 					"home/distress.html",
-					"home/stroke.html"
+					"home/stroke.html",
+					"js/index.js",
+					"home/accordion.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -281,7 +283,8 @@
 					"imgs/info1 (2).jpg",
 					"information/info.html",
 					"information/principle.html",
-					"js/mui.min.js"
+					"js/mui.min.js",
+					"about us.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -314,7 +317,8 @@
 					"emergency/heartattack.html",
 					"emergency/stroke.html",
 					"emergency/posioning.html",
-					"emergency/heat.html"
+					"emergency/heat.html",
+					"emergency/strain.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -328,7 +332,9 @@
 					"imgs/allergy.png",
 					"js/mui.min.js",
 					"fonts/mui.ttf",
-					"emergency.html"
+					"emergency.html",
+					"css/mui.min.css",
+					"js/mui.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -338,7 +344,9 @@
 					"css/mui.css",
 					"js/mui.min.js",
 					"fonts/mui.ttf",
-					"home.html"
+					"home.html",
+					"js/mui.js",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -347,7 +355,11 @@
 				"resources": [
 					"emergency.html",
 					"css/mui.css",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"imgs/allergy.jpg",
+					"home/allergy.html",
+					"js/index.js",
+					"js/mui.min.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -355,14 +367,19 @@
 			"emergency/asthma.html": {
 				"resources": [
 					"emergency.html",
-					"css/mui.css"
+					"css/mui.css",
+					"imgs/asthma2.jpg",
+					"home/asthma.html"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"emergency/bleeding.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"css/mui.css",
+					"fonts/mui.ttf",
+					"video/bleeding.mpeg"
 				],
 				"refer": [],
 				"priority": 0
@@ -371,7 +388,9 @@
 				"resources": [
 					"emergency.html",
 					"video/broken-bones.mp4",
-					"imgs/broken-bones.png"
+					"imgs/broken-bones.png",
+					"imgs/broken.jpg",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -379,14 +398,18 @@
 			"emergency/fire.html": {
 				"resources": [
 					"css/mui.css",
-					"emergency.html"
+					"emergency.html",
+					"imgs/fire2.png",
+					"home/fire.html"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"emergency/unconcious.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"imgs/unconcious-emergency.jpg",
+					"imgs/concious.jpg"
 				],
 				"refer": [],
 				"priority": 0
@@ -396,7 +419,8 @@
 					"emergency.html",
 					"css/mui.css",
 					"precaution.html",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"home/posioning.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -407,7 +431,9 @@
 					"js/jquery.min.js",
 					"css/mui.css",
 					"fonts/mui.ttf",
-					"css/app.css"
+					"css/app.css",
+					"js/index.js",
+					"home/broken_bone.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -416,7 +442,8 @@
 				"resources": [
 					"precaution.html",
 					"fonts/mui.ttf",
-					"css/mui.css"
+					"css/mui.css",
+					"imgs/huozai.jpg"
 				],
 				"refer": [],
 				"priority": 0
@@ -440,7 +467,10 @@
 			},
 			"precaution/severeheat.html": {
 				"resources": [
-					"precaution.html"
+					"precaution.html",
+					"imgs/serverheat.jpg",
+					"css/mui.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -454,21 +484,28 @@
 			},
 			"precaution/volcano.html": {
 				"resources": [
-					"precaution.html"
+					"precaution.html",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"information/course.html": {
 				"resources": [
-					"information.html"
+					"information.html",
+					"css/mui.css",
+					"fonts/mui.ttf",
+					"js/index.js"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"emergency/heartattack.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"home/unconcious.html",
+					"imgs/heartattack.jpg",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -477,28 +514,35 @@
 				"resources": [
 					"information.html",
 					"fonts/mui.ttf",
-					"css/mui.css"
+					"css/mui.css",
+					"js/index.js"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"precaution/tsunami.html": {
 				"resources": [
-					"precaution.html"
+					"precaution.html",
+					"imgs/tsunami.jpg",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"emergency/stroke.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"imgs/stroke2.png"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"emergency/diabetes.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"imgs/diabetes.png",
+					"fonts/mui.ttf",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -512,21 +556,25 @@
 			},
 			"emergency/heat.html": {
 				"resources": [
-					"emergency.html"
+					"emergency.html",
+					"css/mui.css",
+					"home/severheat.html"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"precaution/flood.html": {
 				"resources": [
-					"precaution.html"
+					"precaution.html",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"information/principle.html": {
 				"resources": [
-					"information.html"
+					"information.html",
+					"css/mui.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -548,7 +596,12 @@
 			},
 			"home/bleeding.html": {
 				"resources": [
-					"home.html"
+					"home.html",
+					"css/mui.css",
+					"css/app.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -562,7 +615,10 @@
 			},
 			"home/posioning.html": {
 				"resources": [
-					"home.html"
+					"home.html",
+					"css/mui.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -577,14 +633,17 @@
 			},
 			"home/severheat.html": {
 				"resources": [
-					"css/mui.css"
+					"css/mui.css",
+					"home.html",
+					"imgs/serverheat2.jpg"
 				],
 				"refer": [],
 				"priority": 0
 			},
 			"home/fire.html": {
 				"resources": [
-					"css/mui.css"
+					"css/mui.css",
+					"home.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -592,7 +651,9 @@
 			"home/unconcious.html": {
 				"resources": [
 					"home.html",
-					"css/mui.css"
+					"css/mui.css",
+					"imgs/unconcious.jpg",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -616,6 +677,38 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"about us.html": {
+				"resources": [
+					"css/mui.css",
+					"information.html",
+					"js/mui.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/strain.html": {
+				"resources": [
+					"home.html",
+					"imgs/strain.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"emergency/strain.html": {
+				"resources": [
+					"emergency.html",
+					"imgs/strain.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home/accordion.html": {
+				"resources": [
+					"css/app.css"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -636,7 +729,6 @@
 				"imgs/haixiao.jpg",
 				"imgs/info1%20(1).jpg",
 				"imgs/zhangpeng.jpg",
-				"imgs/huozai.jpg",
 				"imgs/yanlian.jpg",
 				"main/template.html",
 				"imgs/dianxian.png",
@@ -660,5 +752,18 @@
 			],
 			"priority": 0
 		}
-	}
+	},
+	"unpackage":[
+	  "imgs/dianxian.png",
+	  "imgs/haixiao.jpg",
+	  "imgs/hanzai.jpg",
+	  "imgs/jijiubao.jpg",
+	  "imgs/shixue.png",
+	  "imgs/unconcious_red.png",
+	  "imgs/unconciousbreath_red.png",
+	  "imgs/yanhan.jpg",
+	  "imgs/yanlian.jpg",
+	  "imgs/zhangpeng.jpg",
+	  "main/template.html"
+	]
 }
