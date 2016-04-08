@@ -451,7 +451,11 @@
 			"precaution/servercold.html": {
 				"resources": [
 					"precaution.html",
-					"css/mui.css"
+					"css/mui.css",
+					"imgs/yanhan.jpg",
+					"fonts/mui.ttf",
+					"imgs/huozai.jpg",
+					"imgs/cold.jpg"
 				],
 				"refer": [],
 				"priority": 0
@@ -682,7 +686,8 @@
 				"resources": [
 					"css/mui.css",
 					"information.html",
-					"js/mui.js"
+					"js/mui.js",
+					"imgs/qrcode.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -721,7 +726,6 @@
 				"imgs/fooyoyo模板2.jpg",
 				"imgs/jijiubao.jpg",
 				"imgs/unconcious_red.png",
-				"imgs/yanhan.jpg",
 				"imgs/yanlian1%20(4).jpg",
 				"about%20us.html",
 				"imgs/info1%20(4).jpg",

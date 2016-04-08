@@ -356,7 +356,12 @@
 	},
 	"precaution/servercold.html": {
 		"resources": [
-			"precaution.html"
+			"precaution.html",
+			"imgs/yanhan.jpg",
+			"css/mui.css",
+			"fonts/mui.ttf",
+			"imgs/huozai.jpg",
+			"imgs/cold.jpg"
 		],
 		"refer": [
 			"precaution.html"
@@ -558,7 +563,8 @@
 		"resources": [
 			"css/mui.css",
 			"information.html",
-			"js/mui.js"
+			"js/mui.js",
+			"imgs/qrcode.png"
 		],
 		"refer": [
 			"information.html"
